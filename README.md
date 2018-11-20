@@ -20,7 +20,7 @@ template for _instances_.
 
 - `Cat`, `Dog`, and `Bird` classes accept parameters: `name`,`sex`
 - If `sex` of `Bird` is "male", variable `canTalk` equals true
-- Write function `speak`: `Cat` says "[name] says meow!", `Dog` says "[name]
+- Write function `speak`: `Cat` says "`name` says meow!", `Dog` says "`name`
 says woof!" and `Bird`, if male, says "It's me! `name`, the parrot!", if not,
 it says "Squawk!".
 
