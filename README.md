@@ -6,15 +6,15 @@
 
 ## Introduction
 
-In review, with _object-oriented programming (OOP)_, we can use objects to
+In review, with _Object-Oriented programming (OOP)_, we can use objects to
 represent concepts such as students, books, comments, posts, or even animals.
 
-We should only have to define the properties of an object one time and then
-be able to create as many different _instances_ of this objected as we want,
-without repeating ourselves.
+We should only have to define the properties and methods of a class once.
+Different _instances_ of this class will all have the same properties and
+methods.
 
-With knowledge of `constructors`, we can use JavaScript to create a template for
-objects that we can use to _construct_ many different pets.
+With knowledge of `constructors`, we can use JavaScript's `class`es as a
+template for _instances_.
 
 ### Write a Method That Uses Instance Data and Parameter Data
 
@@ -40,14 +40,9 @@ class Bird {
 
 ## Conclusion
 
-We've reviewed working with objects in JavaScript, and started to think about
-object-orientated programming by applying the constructor function pattern when
-creating objects so that we can easily define and reuse objects that we design.
-We can probably think of ways to continue refactoring our constructors and even
-making these pretend pets do more useful things; but for now, let's appreciate
-that JavaScript gives you a way of passing information down from a higher-level
-constructor to concrete instances, and how instances can modify each other's
-properties as they're passed around. Good work!
+We've learned to instantiate class instances, or "objects" in JavaScript.
+The constructor function allows us to easily define and standardize the instances
+we create. Good work!
 
 ## Resources
 
