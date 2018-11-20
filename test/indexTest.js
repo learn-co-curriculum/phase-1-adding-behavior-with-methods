@@ -1,42 +1,23 @@
-let cat, dog, bird, bird2;
 
-describe("cat", () => {
-  beforeEach(() => {
-    cat = new Cat("Sasha", "female")
+
+describe("index.html", () => {
+  it("includes 'hello'", () => {
+    expect(document.querySelector('body').innerHTML).to.include('hello')
   })
 
-  it("has a class of cat", () => {
-    expect(new Cat()).to.be.an.instanceof(Cat);
+  it("includes div", () => {
+    expect(document.querySelector('body').innerHTML, "no empty div element found within body").to.include('<div></div>')
   })
-  it("cat.speak() returns '[name]' says meow!", () => {
-    expect(cat.speak()).to.eq(`${cat.name} says meow!`)
-  })
+
+
 })
-describe("dog", () => {
-  beforeEach(() => {
-    dog = new Dog("Rufio", "male")
-  })
 
-  it("has a class of dog", () => {
-    expect(new Dog()).to.be.an.instanceof(Dog);
-  })
-  it("dog.speak() returns '[name] says woof!'", () => {
-    expect(dog.speak()).to.eq(`${dog.name} says woof!`)
-  })
-})
-describe("bird", () => {
-  beforeEach(() => {
-    bird = new Bird("Pablo", "male")
-    bird2 = new Bird("Mable", "female")
-  })
-  
-  it("has a class of Bird", () => {
-    expect(new Bird()).to.be.an.instanceof(Bird);
-  })
-  it("bird.speak() returns 'It's me! [name]], the parrot!'", () => {
-    expect(bird.speak()).to.eq(`It's me! ${bird.name}, the parrot!`)
-  })
-  it("bird2.speak() returns 'Squawk!'", () => {
-    expect(bird2.speak()).to.eq(`Squawk!`)
+
+describe("index.js", () => {
+  it("exists", () => {
+    expect(testVar).to.exist
+    expect(testVar).to.deep.equal({}) //without .deep, {} does not equal {}
+    expect(testFunc).to.exist
+    expect(testFunc()).to.equal('hi')
   })
 })
