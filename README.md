@@ -20,7 +20,7 @@ objects that we can use to _construct_ many different pets.
 
 - `Cat`, `Dog`, and `Bird` classes accept parameters: `name`,`sex`
 - If `sex` of `Bird` is "male", variable `canTalk` equals true
-- Write function `speak`: `Cat` says "[name] says meow!", `Dog` says "[name]
+- Write function `speak`: `Cat` says "`name` says meow!", `Dog` says "`name`
 says woof!" and `Bird`, if male, says "It's me! `name`, the parrot!", if not,
 it says "Squawk!".
 
@@ -42,7 +42,7 @@ class Bird {
 
 We've reviewed working with objects in JavaScript, and started to think about
 object-orientated programming by applying the constructor function pattern when
-creating objects so that we can easily define and reuse objects that we design.
+creating objects. With constructors, we can easily define and reuse objects.
 We can probably think of ways to continue refactoring our constructors and even
 making these pretend pets do more useful things; but for now, let's appreciate
 that JavaScript gives you a way of passing information down from a higher-level
