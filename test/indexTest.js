@@ -9,7 +9,7 @@ describe("cat", () => {
     expect(new Cat()).to.be.an.instanceof(Cat);
   })
   it("cat.speak() returns '[name]' says meow!", () => {
-    expect(cat.speak()).to.eq(`${cat.name} says meow!`)
+    expect(cat.speak()).to.eq('Sasha says meow!')
   })
 })
 describe("dog", () => {
@@ -21,7 +21,7 @@ describe("dog", () => {
     expect(new Dog()).to.be.an.instanceof(Dog);
   })
   it("dog.speak() returns '[name] says woof!'", () => {
-    expect(dog.speak()).to.eq(`${dog.name} says woof!`)
+    expect(dog.speak()).to.eq('Rufio says woof!')
   })
 })
 describe("bird", () => {

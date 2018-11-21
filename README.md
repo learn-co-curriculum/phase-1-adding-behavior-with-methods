@@ -6,23 +6,27 @@
 
 ## Introduction
 
-In review, with _Object-Oriented programming (OOP)_, we can use objects to
+In review, with _Object-Oriented programming (OOP)_, we can use classes to
 represent concepts such as students, books, comments, posts, or even animals.
 
 We should only have to define the properties and methods of a class once.
 Different _instances_ of this class will all have the same properties and
-methods.
+methods. Specific values for those properties will be different between
+instances. Mickey and Minnie are both `Mouse` instances that have a property
+called `name`, but the value of that property for each is different.
 
 With knowledge of `constructors`, we can use JavaScript's `class`es as a
 template for _instances_.
 
 ### Write a Method That Uses Instance Data and Parameter Data
 
-- `Cat`, `Dog`, and `Bird` classes accept parameters: `name`,`sex`
-- If `sex` of `Bird` is "male", variable `canTalk` equals true
-- Write function `speak`: `Cat` says "`name` says meow!", `Dog` says "`name`
-says woof!" and `Bird`, if male, says "It's me! `name`, the parrot!", If it 
-is not `male`, speak returns "`name` says squawk!".
+For practice _OOP_ concepts, let's create 3 classes that will initialize their
+_instance variables_ with constructor functions that are passed initial
+parameters. We'll also write methods that leverage _instance variables_.
+
+1. Create `class`es `Cat`, `Dog`, and `Bird`
+2. Each of these `class`es will accept the _parameters_ `name` and `sex` and
+   will store those values as _instance variables_
 
 ```js
 class Cat {
@@ -37,6 +41,13 @@ class Bird {
   //...
 }
 ```
+
+For each `class`, create the method `speak`.
+- For an _instance_ of `Cat`, speak returns "`name` says meow!",
+- For an _instance_ of `Dog`, speak returns "`name` says woof!"
+- For an _instance_ of `Bird`, speak returns conditional output. If the _instance_
+of `Bird` is `male`, speak returns "It's me! `name`, the parrot!". If it is not `male`,
+speak returns "`name` says squawk!".
 
 ## Conclusion
 
