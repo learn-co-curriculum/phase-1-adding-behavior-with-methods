@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In review, with _Object-Oriented programming (OOP)_, we can use objects to
+In review, with _Object-Oriented programming (OOP)_, we can use classes to
 represent concepts such as students, books, comments, posts, or even animals.
 
 We should only have to define the properties and methods of a class once.
