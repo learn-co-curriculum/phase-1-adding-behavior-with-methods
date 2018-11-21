@@ -20,14 +20,13 @@ template for _instances_.
 
 ### Write a Method That Uses Instance Data and Parameter Data
 
-To further explore _OOP_ concepts, let's create 3 classes that will contain
-`constructors` and functions that leverage _parameter_ data. In `index.js`,
-perform the following tasks:
+For practice _OOP_ concepts, let's create 3 classes that will initialize their
+_instance variables_ with constructor functions that are passed initial
+parameters. We'll also write methods that leverage _instance variables_.
 
-1. Create `class`es `Cat`, `Dog`, and `Bird`.
-2. Each of these `class`es will accept the _parameters_ `name` and `sex`.
-3. Your `name` and `sex` _parameters_ will operate as the template for new
-_instances_ of each class.
+1. Create `class`es `Cat`, `Dog`, and `Bird`
+2. Each of these `class`es will accept the _parameters_ `name` and `sex` and
+   will store those values as _instance variables_
 
 ```js
 class Cat {
