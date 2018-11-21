@@ -1,8 +1,3 @@
-// Also: students haven't seen `templateStrings` yet, so we should write our
-// expectations as String
-//
-// Also our solution in solution branch should not use templateString yet
-// either.
 let cat, dog, bird, bird2;
 
 describe("cat", () => {
@@ -14,8 +9,7 @@ describe("cat", () => {
     expect(new Cat()).to.be.an.instanceof(Cat);
   })
   it("cat.speak() returns '[name]' says meow!", () => {
-    // Hard-code in the expectation
-    expect(cat.speak()).to.eq(`${cat.name} says meow!`)
+    expect(cat.speak()).to.eq('Sasha says meow!')
   })
 })
 describe("dog", () => {
@@ -27,8 +21,7 @@ describe("dog", () => {
     expect(new Dog()).to.be.an.instanceof(Dog);
   })
   it("dog.speak() returns '[name] says woof!'", () => {
-    // Hard-code in the expectation
-    expect(dog.speak()).to.eq(`${dog.name} says woof!`)
+    expect(dog.speak()).to.eq('Rufio says woof!')
   })
 })
 describe("bird", () => {
@@ -41,10 +34,9 @@ describe("bird", () => {
     expect(new Bird()).to.be.an.instanceof(Bird);
   })
   it("bird.speak() returns 'It's me! [name], the parrot!'", () => {
-    // Hard-code in the expectation
-    expect(bird.speak()).to.eq(`It's me! ${bird.name}, the parrot!`)
+    expect(bird.speak()).to.eq('It\'s me! Pablo the parrot!')
   })
   it("bird2.speak() returns 'Squawk!'", () => {
-    expect(bird2.speak()).to.eq(`Squawk!`)
+    expect(bird2.speak()).to.eq('Mable says squawk!')
   })
 })

@@ -47,7 +47,7 @@ For each `class`, create the method `speak`.
 - For an _instance_ of `Dog`, speak returns "`name` says woof!"
 - For an _instance_ of `Bird`, speak returns conditional output. If the _instance_
 of `Bird` is `male`, speak returns "It's me! `name`, the parrot!". If it is not `male`,
-speak returns "Squawk!".
+speak returns "`name` says squawk!".
 
 ## Conclusion
 
