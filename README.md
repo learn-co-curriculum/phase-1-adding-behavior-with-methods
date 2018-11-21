@@ -18,11 +18,14 @@ template for _instances_.
 
 ### Write a Method That Uses Instance Data and Parameter Data
 
-- `Cat`, `Dog`, and `Bird` classes accept parameters: `name`,`sex`
-- If `sex` of `Bird` is "male", variable `canTalk` equals true
-- Write function `speak`: `Cat` says "`name` says meow!", `Dog` says "`name`
-says woof!" and `Bird`, if male, says "It's me! `name`, the parrot!", if not,
-it says "Squawk!".
+To further explore _OOP_ concepts, let's create 3 classes that will contain
+`constructors` and functions that leverage _parameter_ data. In `index.js`,
+perform the following tasks:
+
+1. Create `class`es `Cat`, `Dog`, and `Bird`.
+2. Each of these `class`es will accept the _parameters_ `name` and `sex`.
+3. Your `name` and `sex` _parameters_ will operate as the template for new
+_instances_ of each class.
 
 ```js
 class Cat {
@@ -37,6 +40,13 @@ class Bird {
   //...
 }
 ```
+
+For each `class`, create the method `speak`.
+- For an _instance_ of `Cat`, speak returns "`name` says meow!",
+- For an _instance_ of `Dog`, speak returns "`name` says woof!"
+- For an _instance_ of `Bird`, speak returns conditional output. If the _instance_
+of `Bird` is `male`, speak returns "It's me! `name`, the parrot!". If it is not `male`,
+speak returns "Squawk!".
 
 ## Conclusion
 
