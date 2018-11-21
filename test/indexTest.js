@@ -33,10 +33,10 @@ describe("bird", () => {
   it("has a class of Bird", () => {
     expect(new Bird()).to.be.an.instanceof(Bird);
   })
-  it("bird.speak() returns 'It's me! [name]], the parrot!'", () => {
-    expect(bird.speak()).to.eq(`It's me! ${bird.name}, the parrot!`)
+  it("bird.speak() returns 'It's me! [name], the parrot!'", () => {
+    expect(bird.speak()).to.eq('It\'s me! Pablo, the parrot!')
   })
   it("bird2.speak() returns 'Squawk!'", () => {
-    expect(bird2.speak()).to.eq(`Squawk!`)
+    expect(bird2.speak()).to.eq('Mable says squawk!')
   })
 })
