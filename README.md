@@ -11,7 +11,9 @@ represent concepts such as students, books, comments, posts, or even animals.
 
 We should only have to define the properties and methods of a class once.
 Different _instances_ of this class will all have the same properties and
-methods.
+methods. Specific values for those properties will be different between
+instances. Mickey and Minnie are both `Mouse` instances that have a property
+called `name`, but the value of that property for each is different.
 
 With knowledge of `constructors`, we can use JavaScript's `class`es as a
 template for _instances_.
