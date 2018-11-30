@@ -1,8 +1,8 @@
-# Building Cells: Adding Behavior With Methods
+# Adding Behavior With Methods
 
 ## Learning Goals
 
-- Write a method that uses instance data and parameter data
+- Write methods that use instance data and parameter data
 
 ## Introduction
 
@@ -20,42 +20,43 @@ template for _instances_.
 
 ### Write a Method That Uses Instance Data and Parameter Data
 
-For practice _OOP_ concepts, let's create 3 classes that will initialize their
-_instance variables_ with constructor functions that are passed initial
-parameters. We'll also write methods that leverage _instance variables_.
+To practice _OOP_ concepts, let's create 3 `class`es that use `constructor`
+methods. These `constructor`s will assign properties based on initial parameters.
+We'll also write methods that leverage these properties.
 
-1. Create `class`es `Cat`, `Dog`, and `Bird`
-2. Each of these `class`es will accept the _parameters_ `name` and `sex` and
-   will store those values as _instance variables_
+1.  Create `class`es `Cat`, `Dog`, and `Bird`
+2.  Each of these `class`es will accept the _parameters_ `name` and `sex` and
+    will store those values as _properties_.
 
 ```js
 class Cat {
-  //...
+	//...
 }
 
 class Dog {
-  //...
+	//...
 }
 
 class Bird {
-  //...
+	//...
 }
 ```
 
 For each `class`, create the method `speak`.
+
 - For an _instance_ of `Cat`, speak returns "`name` says meow!",
 - For an _instance_ of `Dog`, speak returns "`name` says woof!"
-- For an _instance_ of `Bird`, speak returns conditional output. If the _instance_
-of `Bird` is `male`, speak returns "It's me! `name`, the parrot!". If it is not `male`,
-speak returns "`name` says squawk!".
+- For an _instance_ of `Bird`, speak returns conditional output. If the
+  _instance_ of `Bird` is `male`, speak returns "It's me! `name`, the parrot!". If
+  it is not `male`, speak returns "`name` says squawk!".
 
 ## Conclusion
 
-We've learned to instantiate class instances, or "objects" in JavaScript.
-The constructor function allows us to easily define and standardize the instances
-we create. Good work!
+We've learned to instantiate class instances, or "objects" in JavaScript. The
+constructor function allows us to easily define and standardize the instances we
+create. Good work!
 
 ## Resources
 
-* [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) - [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
-* [JavaScript — Multiple Ways to Create Objects](https://codeburst.io/various-ways-to-create-javascript-object-9563c6887a47)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) - [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [JavaScript — Multiple Ways to Create Objects](https://codeburst.io/various-ways-to-create-javascript-object-9563c6887a47)
