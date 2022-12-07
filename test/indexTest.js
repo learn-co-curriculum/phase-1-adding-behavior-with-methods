@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 let cat, dog, bird, bird2;
 
 describe("cat", () => {
